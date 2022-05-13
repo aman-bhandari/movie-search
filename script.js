@@ -78,7 +78,7 @@ function loadMovieDetails() {
       searchList.classList.add("hide-search-list");
       movieSearchBox.value = "";
       const result = await fetch(
-        `http://www.omdbapi.com/?i=${movie.dataset.id}&apikey=da8c5a38`
+        `https://www.omdbapi.com/?i=${movie.dataset.id}&apikey=da8c5a38`
       );
       const movieDetails = await result.json();
       //   console.log(movieDetails.imdbID);
@@ -127,7 +127,7 @@ function displayMovieDetails(details) {
     }
     favArray = [...new Set(favArray)];
     const result = await fetch(
-      `http://www.omdbapi.com/?i=${this.id}&apikey=da8c5a38`
+      `https://www.omdbapi.com/?i=${this.id}&apikey=da8c5a38`
     );
     const movieDetails = await result.json();
     // console.log(favArray, movieDetails.imdbID);
@@ -176,7 +176,7 @@ window.addEventListener("DOMContentLoaded", function () {
   favArray = [...new Set(favArray)];
   favArray.forEach(async function (item) {
     const result = await fetch(
-      `http://www.omdbapi.com/?i=${item}&apikey=da8c5a38`
+      `https://www.omdbapi.com/?i=${item}&apikey=da8c5a38`
     );
     const movieDetails = await result.json();
 
@@ -226,7 +226,7 @@ modal.addEventListener("click", async function (e) {
       }
     } else {
       const result = await fetch(
-        `http://www.omdbapi.com/?i=${id}&apikey=da8c5a38`
+        `https://www.omdbapi.com/?i=${id}&apikey=da8c5a38`
       );
       const movieDetails = await result.json();
       displayMovieDetails(movieDetails);
