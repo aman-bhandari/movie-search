@@ -1,4 +1,7 @@
 # movie-search-app-html-css-javascript-omdb
+This site is published at https://aman-bhandari.github.io/movie-search/
+
+
 Create a mini IMDB clone app. Use ONLY vanilla javascript, no libraries or frameworks allowed for Javascript
 Use the OMDB API: https://www.omdbapi.com/
 
